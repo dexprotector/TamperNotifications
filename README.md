@@ -32,7 +32,7 @@ zip -d  app-release-copy.apk META-INF/*
 jarsigner -verbose  -digestalg SHA1 -keystore sample.keystore  app-release-copy.apk  -storepass android -keypass android android
 zipalign -v -f 4  app-release-copy.apk  app-release-modified.apk
 ```
-After installation and launching of app/app-release-modified.apk there should be a message displayed: `Tamper detection result: true`
+After installation and launching of app-release-modified.apk there should be a message displayed: `Tamper detection result: true`
 
 ### Adding a file into the APK
 ```
@@ -43,7 +43,7 @@ zip -d app-release-copy.apk META-INF/*
 jarsigner -verbose  -digestalg SHA1 -keystore sample.keystore app-release-copy.apk  -storepass android -keypass android android
 zipalign -v -f 4  app-release-copy.apk  app-release-modified.apk
 ```
-After installation and launching of app/app-release-modified.apk there should be a message displayed: `Tamper detection result: true`
+After installation and launching of app-release-modified.apk there should be a message displayed: `Tamper detection result: true`
 
 ### Deleting a file from the APK 
 ```
@@ -53,7 +53,7 @@ zip -d app-release-copy.apk META-INF/*
 jarsigner -verbose  -digestalg SHA1 -keystore sample.keystore app-release-copy.apk  -storepass android -keypass android android
 zipalign -v -f 4  app-release-copy.apk  app-release-modified.apk
 ```
-After installation and launching of app/app-release-modified.apk there should be a message displayed: `Tamper detection result: true`
+After installation and launching of app-release-modified.apk there should be a message displayed: `Tamper detection result: true`
 
 ### Resigning with a different certificate
 
@@ -72,4 +72,4 @@ zip -d app-release-copy.apk META-INF/*
 jarsigner -verbose  -digestalg SHA1 -keystore test.keystore app-release-copy.apk  -storepass android -keypass android android
 zipalign -v -f 4  app-release-copy.apk  app-release-modified.apk
 ```
-After installation and launching of app/app-release-modified.apk there should be a message displayed: `Tamper detection result: true`
+After installation and launching of app-release-modified.apk there should be a message displayed: `Tamper detection result: true`
