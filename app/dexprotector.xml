@@ -4,6 +4,7 @@
     <optimize>false</optimize>
     <signMode>release</signMode>	
     <detect>
+      <!-- for debugging purposes only -->  
       <trace>9</trace>
       <integrity>
         <positiveCheckCallback>com.dexprotector.detector.integrity.MainActivity.positiveTamperCheck</positiveCheckCallback>
